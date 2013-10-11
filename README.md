@@ -11,6 +11,7 @@ The idea itself, in a nutshell, is to allow a person to search for a developer. 
 Website Project:
 http://nscoders.com
 
+
 How to contribute
 ============
 
@@ -29,5 +30,12 @@ Objective-C Style Guide
 - Login + Registration
 - Searching for a developer (map or list view)
 - Developer's Detail
+
+
+Dependencies
+========
+
+- [CocoaPods](http://cocoapods.org) v0.26
+
 
 ================ 
