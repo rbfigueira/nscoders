@@ -7,6 +7,7 @@
 //
 
 #import "NCAppDelegate.h"
+#import "NCStartingViewController.h"
 
 @implementation NCAppDelegate
 
@@ -16,6 +17,13 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    
+    NCStartingViewController *startingViewController = [[NCStartingViewController alloc] initWithNibName:nil bundle:nil];
+    UINavigationController *startingNavigationController = [[UINavigationController alloc] initWithRootViewController:startingViewController];
+    
+    [[self window] setRootViewController:startingNavigationController];
+    
     return YES;
 }
 
