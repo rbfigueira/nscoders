@@ -261,8 +261,7 @@
 				D0028324180DE43400E188E7 /* NCMapViewController.m */,
 				D0028325180DE43400E188E7 /* NCMapViewController.xib */,
 			);
-			name = "Map ViewController";
-			path = "Main ViewController";
+			path = "Map ViewController";
 			sourceTree = "<group>";
 		};
 		D020ED36180ECAED00CFACA2 /* Category */ = {
@@ -271,7 +270,8 @@
 				D020ED32180EC87900CFACA2 /* NCMapViewController+UI.h */,
 				D020ED33180EC87900CFACA2 /* NCMapViewController+UI.m */,
 			);
-			path = Category;
+			name = Category;
+			path = "../Map ViewController/Category";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
