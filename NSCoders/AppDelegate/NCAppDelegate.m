@@ -20,15 +20,10 @@
     [self.window makeKeyAndVisible];
     
     
-    //NCStartingViewController *startingViewController = [[NCStartingViewController alloc] initWithNibName:nil bundle:nil];
-    //UINavigationController *startingNavigationController = [[UINavigationController alloc] initWithRootViewController:startingViewController];
+    NCStartingViewController *startingViewController = [[NCStartingViewController alloc] initWithNibName:nil bundle:nil];
+    UINavigationController *startingNavigationController = [[UINavigationController alloc] initWithRootViewController:startingViewController];
     
-    //[[self window] setRootViewController:startingNavigationController];
-    
-    NCMapViewController *mapViewController = [[NCMapViewController alloc] initWithNibName:nil bundle:nil];
-    UINavigationController *mapNavigationController = [[UINavigationController alloc] initWithRootViewController:mapViewController];
-    
-    [[self window] setRootViewController:mapNavigationController];
+    [[self window] setRootViewController:startingNavigationController];
     
     return YES;
 }
