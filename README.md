@@ -35,7 +35,7 @@ Objective-C Style Guide
 Dependencies
 ========
 
-- [CocoaPods](http://cocoapods.org) v0.26
+- [CocoaPods](http://cocoapods.org) v0.26; Is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries.
 
 
 ================ 
