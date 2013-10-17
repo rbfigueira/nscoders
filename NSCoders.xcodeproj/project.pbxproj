@@ -25,13 +25,14 @@
 		C744CF171807491000FB246D /* NCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C744CF101807491000FB246D /* NCAppDelegate.m */; };
 		C744CF181807491000FB246D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C744CF141807491000FB246D /* main.m */; };
 		D0028326180DE43400E188E7 /* NCMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0028324180DE43400E188E7 /* NCMapViewController.m */; };
-		D0028327180DE43400E188E7 /* NCMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0028325180DE43400E188E7 /* NCMapViewController.xib */; };
 		D020ED2E180EC28800CFACA2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D020ED2D180EC28800CFACA2 /* MapKit.framework */; };
 		D020ED2F180EC29600CFACA2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D020ED2D180EC28800CFACA2 /* MapKit.framework */; };
 		D020ED31180EC59800CFACA2 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D020ED30180EC59800CFACA2 /* Media.xcassets */; };
 		D020ED34180EC87900CFACA2 /* NCMapViewController+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = D020ED33180EC87900CFACA2 /* NCMapViewController+UI.m */; };
 		D020ED35180EC87900CFACA2 /* NCMapViewController+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = D020ED33180EC87900CFACA2 /* NCMapViewController+UI.m */; };
-		D020ED7A180F229F00CFACA2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D020ED7C180F229F00CFACA2 /* Localizable.strings */; };
+		D0A49E96180FD4B000262A94 /* NCMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0A49E95180FD4B000262A94 /* NCMapViewController.xib */; };
+		D0A49E9B180FF8B900262A94 /* NSCoders-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C744CF151807491000FB246D /* NSCoders-Info.plist */; };
+		D0A49E9C180FF91C00262A94 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0A49E9E180FF91C00262A94 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,13 +69,13 @@
 		C744CF1B180749BF00FB246D /* NSCodersTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NSCodersTests-Info.plist"; sourceTree = "<group>"; };
 		D0028323180DE43400E188E7 /* NCMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMapViewController.h; sourceTree = "<group>"; };
 		D0028324180DE43400E188E7 /* NCMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMapViewController.m; sourceTree = "<group>"; };
-		D0028325180DE43400E188E7 /* NCMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NCMapViewController.xib; sourceTree = "<group>"; };
 		D020ED2D180EC28800CFACA2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D020ED30180EC59800CFACA2 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		D020ED32180EC87900CFACA2 /* NCMapViewController+UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NCMapViewController+UI.h"; sourceTree = "<group>"; };
 		D020ED33180EC87900CFACA2 /* NCMapViewController+UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NCMapViewController+UI.m"; sourceTree = "<group>"; };
-		D020ED7D180F22C100CFACA2 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = file; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		D020ED7F180F22DD00CFACA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D0A49E95180FD4B000262A94 /* NCMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NCMapViewController.xib; sourceTree = "<group>"; };
+		D0A49E9F180FF92300262A94 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = file; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D0A49EA1180FF93900262A94 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EF3FA54749F14955A1D70960 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -214,7 +215,7 @@
 		C744CF121807491000FB246D /* Localization */ = {
 			isa = PBXGroup;
 			children = (
-				D020ED7C180F229F00CFACA2 /* Localizable.strings */,
+				D0A49E9E180FF91C00262A94 /* Localizable.strings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -259,7 +260,7 @@
 				D020ED36180ECAED00CFACA2 /* Category */,
 				D0028323180DE43400E188E7 /* NCMapViewController.h */,
 				D0028324180DE43400E188E7 /* NCMapViewController.m */,
-				D0028325180DE43400E188E7 /* NCMapViewController.xib */,
+				D0A49E95180FD4B000262A94 /* NCMapViewController.xib */,
 			);
 			path = "Map ViewController";
 			sourceTree = "<group>";
@@ -356,10 +357,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D020ED7A180F229F00CFACA2 /* Localizable.strings in Resources */,
 				C7413C48180B321500E5686A /* NCStartingViewController.xib in Resources */,
+				D0A49E9C180FF91C00262A94 /* Localizable.strings in Resources */,
+				D0A49E9B180FF8B900262A94 /* NSCoders-Info.plist in Resources */,
+				D0A49E96180FD4B000262A94 /* NCMapViewController.xib in Resources */,
 				D020ED31180EC59800CFACA2 /* Media.xcassets in Resources */,
-				D0028327180DE43400E188E7 /* NCMapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,11 +488,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D020ED7C180F229F00CFACA2 /* Localizable.strings */ = {
+		D0A49E9E180FF91C00262A94 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D020ED7D180F22C100CFACA2 /* pt-PT */,
-				D020ED7F180F22DD00CFACA2 /* en */,
+				D0A49E9F180FF92300262A94 /* pt-PT */,
+				D0A49EA1180FF93900262A94 /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
