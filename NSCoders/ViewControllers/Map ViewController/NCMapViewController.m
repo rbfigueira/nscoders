@@ -9,45 +9,40 @@
 #import "Category/NCMapViewController+UI.h"
 #import "NCMapViewController.h"
 
+typedef NS_ENUM(NSInteger, NCMapViewModes)
+{
+    NCMapViewModeFollow,
+    NCMapViewModeNearby
+};
 
 @interface NCMapViewController ()
-
 
 @end
 
 @implementation NCMapViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
+#pragma mark -
+#pragma mark View controller life cycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    // Configure the controls of the view.
     [self setupUI];
-    [_mapViewMode addTarget:self action:@selector(changeMapViewMode:) forControlEvents:UIControlEventValueChanged];
+    // Set the event handler for the segment control in the navigation bar.
+    [self.mapViewMode addTarget:self action:@selector(changeMapViewMode:) forControlEvents:UIControlEventValueChanged];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
+#pragma mark -
+#pragma mark Segment control event handler
 - (void)changeMapViewMode:(id)sender
 {
     UISegmentedControl *segmentedControl = (UISegmentedControl *)sender;
-    switch (segmentedControl.selectedSegmentIndex) {
-        case 0:
+    NCMapViewModes mapViewMode = segmentedControl.selectedSegmentIndex;
+    switch (mapViewMode) {
+        case NCMapViewModeFollow:
             // TODO: Define actions for "Following" mode
             break;
-        case 1:
+        case NCMapViewModeNearby:
             self.codersMap.showsUserLocation = YES;
             [self.codersMap setCenterCoordinate:self.codersMap.userLocation.location.coordinate animated:YES];
         default:

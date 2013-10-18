@@ -9,11 +9,16 @@
 #import "NCMapViewController+UI.h"
 #import "NCMapViewController.h"
 
+static NSString *const NCFollowSegmentKey = @"Follow";
+static NSString *const NCNearbySegmentKey = @"Nearby";
+
 @implementation NCMapViewController (UI)
 
 - (void)setupUI
 {
-    self.mapViewMode = [[UISegmentedControl alloc] initWithItems:@[NSLocalizedString(@"Follow", nil), NSLocalizedString(@"Nearby", nil)]];
+    NSString *followLocalizedString = NSLocalizedString(NCFollowSegmentKey, nil);
+    NSString *nearbyLocalizedString = NSLocalizedString(NCNearbySegmentKey, nil);
+    self.mapViewMode = [[UISegmentedControl alloc] initWithItems:@[followLocalizedString, nearbyLocalizedString]];
     self.navigationItem.titleView = self.mapViewMode;
 }
 
