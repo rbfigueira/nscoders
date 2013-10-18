@@ -17,7 +17,9 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    
+
+    //TODO: Ensure iOS 6 compatibility
+    [UINavigationBar appearance].barTintColor = [UIColor blackColor];
     
     NCStartingViewController *startingViewController = [[NCStartingViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController *startingNavigationController = [[UINavigationController alloc] initWithRootViewController:startingViewController];

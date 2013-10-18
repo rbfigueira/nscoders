@@ -5,3 +5,15 @@
   Created by Rui Peres on 10/10/2013.
   Copyright (c) 2013 NSCoders. All rights reserved.
 */
+
+//NCSignUpFirstViewController Localized Strings
+"NCSignUpFirstViewController_NavBarTitle"                   = "Sign Up";
+"NCSignUpFirstViewController_PlaceholderEmail"              = "Email";
+"NCSignUpFirstViewController_PlaceholderPassword"           = "Password";
+"NCSignUpFirstViewController_PlaceholderPasswordConfirm"    = "Confirm Password";
+"NCSignUpFirstViewController_barBtnItemNext"                = "Next";
+
+//NCSignUpSecondViewController Localized Strings
+"NCSignUpSecondViewController_PlaceholderFirstName"         = "First Name";
+"NCSignUpSecondViewController_PlaceholderLastName"          = "Last Name";
+"NCSignUpSecondViewController_PlaceholderPhoneNumber"       = "Phone Number";
