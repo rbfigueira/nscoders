@@ -10,4 +10,6 @@
 
 @interface NCAppDelegate (Appearance)
 
+-(void)setupAppearance;
+
 @end

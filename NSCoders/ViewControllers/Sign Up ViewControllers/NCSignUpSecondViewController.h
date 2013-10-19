@@ -13,4 +13,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtLastName;
 @property (weak, nonatomic) IBOutlet UITextField *txtPhoneNumber;
 
+- (IBAction)barBtnItemDonePressed:(id)sender;
+
 @end

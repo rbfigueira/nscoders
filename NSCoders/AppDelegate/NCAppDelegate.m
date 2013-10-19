@@ -8,6 +8,7 @@
 
 #import "NCAppDelegate.h"
 #import "NCStartingViewController.h"
+#import "NCAppDelegate+Appearance.h"
 
 @implementation NCAppDelegate
 
@@ -18,13 +19,12 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 
-    //TODO: Ensure iOS 6 compatibility
-    [UINavigationBar appearance].barTintColor = [UIColor blackColor];
-    
     NCStartingViewController *startingViewController = [[NCStartingViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController *startingNavigationController = [[UINavigationController alloc] initWithRootViewController:startingViewController];
     
     [[self window] setRootViewController:startingNavigationController];
+
+    [self setupAppearance];
     
     return YES;
 }

@@ -19,10 +19,13 @@
     [self setupUI];
 }
 
+#pragma mark - Actions
+
 - (IBAction)barBtnItemNextPressed:(id)sender {
     NCSignUpSecondViewController *signUpSecondViewController = [[NCSignUpSecondViewController alloc]
                                                                 initWithNibName:nil
                                                                 bundle:nil];
     [self.navigationController pushViewController:signUpSecondViewController animated:YES];
 }
+
 @end

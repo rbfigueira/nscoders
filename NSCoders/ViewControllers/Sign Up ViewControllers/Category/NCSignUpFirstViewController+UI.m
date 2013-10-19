@@ -8,26 +8,36 @@
 
 #import "NCSignUpFirstViewController+UI.h"
 
+static NSString *const NCSignUpFirstViewControllerTitleKey = @"SIGN_UP_TITLE";
+static NSString *const NCSignUpFirstViewControllerEmailKey = @"EMAIL";
+static NSString *const NCSignUpFirstViewControllerPasswordKey = @"PASSWORD";
+static NSString *const NCSignUpFirstViewControllerPasswordConfirmKey = @"CONFIRM_PASSWORD";
+static NSString *const NCSignUpFirstViewControllerNextKey = @"NEXT";
+
 @implementation NCSignUpFirstViewController (UI)
 
 - (void)setupUI
 {
-    [[self navigationItem] setTitle:NSLocalizedString(@"NCSignUpFirstViewController_NavBarTitle", nil)];
-    [[self navigationController] navigationBar].tintColor = [UIColor blackColor];
-    
-    [self.txtEmail
-     setPlaceholder:NSLocalizedString(@"NCSignUpFirstViewController_PlaceholderEmail", nil)];
-    [self.txtPassword
-     setPlaceholder:NSLocalizedString(@"NCSignUpFirstViewController_PlaceholderPassword", nil)];
-    [self.txtPasswordConfirm
-     setPlaceholder:NSLocalizedString(@"NCSignUpFirstViewController_PlaceholderPasswordConfirm", nil)];
-    
+    NSString *NCSignUpFirstViewControllerTitle = NSLocalizedString(NCSignUpFirstViewControllerTitleKey, nil);
+    NSString *NCSignUpFirstViewControllerEmail = NSLocalizedString(NCSignUpFirstViewControllerEmailKey, nil);
+    NSString *NCSignUpFirstViewControllerPassword = NSLocalizedString(NCSignUpFirstViewControllerPasswordKey, nil);
+    NSString *NCSignUpFirstViewControllerPasswordConfirm = NSLocalizedString(NCSignUpFirstViewControllerPasswordConfirmKey, nil);
+    NSString *NCSignUpFirstViewControllerNext = NSLocalizedString(NCSignUpFirstViewControllerNextKey, nil);
+
+    [[self navigationItem] setTitle:NCSignUpFirstViewControllerTitle];
+    [[self navigationController] navigationBar].tintColor = [UIColor whiteColor];
+
+    [self.txtEmail setPlaceholder:NCSignUpFirstViewControllerEmail];
+    [self.txtPassword setPlaceholder:NCSignUpFirstViewControllerPasswordKey];
+    [self.txtPasswordConfirm setPlaceholder:NCSignUpFirstViewControllerPasswordConfirmKey];
+
     //BarButtons Setup
     UIBarButtonItem *barBtnItemNext = [[UIBarButtonItem alloc]
-                                       initWithTitle:NSLocalizedString(@"NCSignUpFirstViewController_barBtnItemNext", nil)
+                                       initWithTitle:NCSignUpFirstViewControllerNext
                                        style:UIBarButtonItemStyleBordered
                                        target:self
                                        action:@selector(barBtnItemNextPressed:)];
+    [barBtnItemNext setTintColor:[UIColor whiteColor]];
     [[self navigationItem] setRightBarButtonItem:barBtnItemNext];
     
 }
