@@ -1,10 +1,13 @@
 PODS:
   - OHHTTPStubs (3.0.0)
+  - SWRevealViewController (1.0.5)
 
 DEPENDENCIES:
   - OHHTTPStubs
+  - SWRevealViewController
 
 SPEC CHECKSUMS:
   OHHTTPStubs: 3a171582478c7f7ecb8d053884ee4d21f96e625b
+  SWRevealViewController: c1698d78b22191af3cd23df4144c3e17e253bb78
 
 COCOAPODS: 0.26.2
