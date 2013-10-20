@@ -9,8 +9,8 @@
 #import "NCMapViewController+UI.h"
 #import "NCMapViewController.h"
 
-static NSString *const NCFollowSegmentKey = @"Follow";
-static NSString *const NCNearbySegmentKey = @"Nearby";
+static NSString *const NCFollowSegmentKey = @"FOLLOW";
+static NSString *const NCNearbySegmentKey = @"NEARBY";
 
 @implementation NCMapViewController (UI)
 
