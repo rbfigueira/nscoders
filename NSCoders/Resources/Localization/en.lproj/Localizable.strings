@@ -6,18 +6,16 @@
   Copyright (c) 2013 NSCoders. All rights reserved.
 */
 
-"SIGN_UP_TITLE"                   = "Sign Up";
+"SIGN_UP_TITLE"                     = "Sign Up";
 
-"NCSignUpFirstViewController_PlaceholderEmail"              = "Email";
-"NCSignUpFirstViewController_PlaceholderPassword"           = "Password";
-"NCSignUpFirstViewController_PlaceholderPasswordConfirm"    = "Confirm Password";
-"NCSignUpFirstViewController_barBtnItemNext"                = "Next";
+"EMAIL"                             = "Email";
+"PASSWORD"                          = "Password";
+"CONFIRM_PASSWORD"                  = "Confirm Password";
+"NEXT"                              = "Next";
 
-//NCSignUpSecondViewController Localized Strings
-"NCSignUpSecondViewController_NavBarTitle"                   = "Sign Up";
-"NCSignUpSecondViewController_PlaceholderFirstName"         = "First Name";
-"NCSignUpSecondViewController_PlaceholderLastName"          = "Last Name";
-"NCSignUpSecondViewController_PlaceholderPhoneNumber"       = "Phone Number";
+"FIRST_NAME"                        = "First Name";
+"LAST_NAME"                         = "Last Name";
+"PHONE_NUMBER"                      = "Phone Number";
 
-"Follow" = "Follow"
-"Nearby" = "Nearby"
+"FOLLOW"                            = "Follow";
+"NEARBY"                            = "Nearby";

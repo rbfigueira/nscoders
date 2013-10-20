@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface NCSignUpSecondViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextField *txtFirstName;
-@property (weak, nonatomic) IBOutlet UITextField *txtLastName;
-@property (weak, nonatomic) IBOutlet UITextField *txtPhoneNumber;
+@property (weak, nonatomic) IBOutlet UITextField *textFirstName;
+@property (weak, nonatomic) IBOutlet UITextField *textLastName;
+@property (weak, nonatomic) IBOutlet UITextField *textPhoneNumber;
+@property (weak, nonatomic) IBOutlet UIImageView *imageViewPhoto;
 
-- (IBAction)barBtnItemDonePressed:(id)sender;
+- (IBAction)barButtonItemDonePressed:(id)sender;
 
 @end

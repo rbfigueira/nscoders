@@ -10,10 +10,10 @@
 
 @interface NCSignUpFirstViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UITextField *txtEmail;
-@property (weak, nonatomic) IBOutlet UITextField *txtPassword;
-@property (weak, nonatomic) IBOutlet UITextField *txtPasswordConfirm;
+@property (weak, nonatomic) IBOutlet UITextField *textEmail;
+@property (weak, nonatomic) IBOutlet UITextField *textPassword;
+@property (weak, nonatomic) IBOutlet UITextField *textPasswordConfirm;
 
-- (IBAction)barBtnItemNextPressed:(id)sender;
+- (IBAction)barButtonItemNextPressed:(id)sender;
 
 @end

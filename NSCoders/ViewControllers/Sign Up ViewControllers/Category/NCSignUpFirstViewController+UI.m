@@ -18,6 +18,7 @@ static NSString *const NCSignUpFirstViewControllerNextKey = @"NEXT";
 
 - (void)setupUI
 {
+
     NSString *NCSignUpFirstViewControllerTitle = NSLocalizedString(NCSignUpFirstViewControllerTitleKey, nil);
     NSString *NCSignUpFirstViewControllerEmail = NSLocalizedString(NCSignUpFirstViewControllerEmailKey, nil);
     NSString *NCSignUpFirstViewControllerPassword = NSLocalizedString(NCSignUpFirstViewControllerPasswordKey, nil);
@@ -27,16 +28,16 @@ static NSString *const NCSignUpFirstViewControllerNextKey = @"NEXT";
     [[self navigationItem] setTitle:NCSignUpFirstViewControllerTitle];
     [[self navigationController] navigationBar].tintColor = [UIColor whiteColor];
 
-    [self.txtEmail setPlaceholder:NCSignUpFirstViewControllerEmail];
-    [self.txtPassword setPlaceholder:NCSignUpFirstViewControllerPasswordKey];
-    [self.txtPasswordConfirm setPlaceholder:NCSignUpFirstViewControllerPasswordConfirmKey];
+    [self.textEmail setPlaceholder:NCSignUpFirstViewControllerEmail];
+    [self.textPassword setPlaceholder:NCSignUpFirstViewControllerPassword];
+    [self.textPasswordConfirm setPlaceholder:NCSignUpFirstViewControllerPasswordConfirm];
 
     //BarButtons Setup
     UIBarButtonItem *barBtnItemNext = [[UIBarButtonItem alloc]
                                        initWithTitle:NCSignUpFirstViewControllerNext
                                        style:UIBarButtonItemStyleBordered
                                        target:self
-                                       action:@selector(barBtnItemNextPressed:)];
+                                       action:@selector(barButtonItemNextPressed:)];
     [barBtnItemNext setTintColor:[UIColor whiteColor]];
     [[self navigationItem] setRightBarButtonItem:barBtnItemNext];
     

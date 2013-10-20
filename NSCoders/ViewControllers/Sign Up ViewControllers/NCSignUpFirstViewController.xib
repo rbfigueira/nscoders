@@ -6,9 +6,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NCSignUpFirstViewController">
             <connections>
-                <outlet property="txtEmail" destination="kQx-Ik-MBj" id="DJF-vL-U3i"/>
-                <outlet property="txtPassword" destination="F3O-90-yN9" id="y4M-H6-M9U"/>
-                <outlet property="txtPasswordConfirm" destination="vnb-1e-xlD" id="4y7-93-Gqu"/>
+                <outlet property="textEmail" destination="kQx-Ik-MBj" id="xwv-bz-WOS"/>
+                <outlet property="textPassword" destination="F3O-90-yN9" id="uEJ-yA-FnK"/>
+                <outlet property="textPasswordConfirm" destination="vnb-1e-xlD" id="TIH-eK-7vX"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>

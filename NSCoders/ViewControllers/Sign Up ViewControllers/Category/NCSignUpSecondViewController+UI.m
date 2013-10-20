@@ -8,23 +8,32 @@
 
 #import "NCSignUpSecondViewController+UI.h"
 
+static NSString *const NCSignUpSecondViewControllerTitleKey = @"SIGN_UP_TITLE";
+static NSString *const NCSignUpSecondViewControllerFirstNameKey = @"FIRST_NAME";
+static NSString *const NCSignUpSecondViewControllerLastNameKey = @"LAST_NAME";
+static NSString *const NCSignUpSecondViewControllerPhoneNumberKey = @"PHONE_NUMBER";
+
 @implementation NCSignUpSecondViewController (UI)
 
 - (void)setupUI
 {
-    [[self navigationItem] setTitle:NSLocalizedString(@"NCSignUpSecondViewController_NavBarTitle", nil)];
+    NSString *NCSignUpSecondViewControllerTitle = NSLocalizedString(NCSignUpSecondViewControllerTitleKey, nil);
+    NSString *NCSignUpSecondViewControllerFirstName = NSLocalizedString(NCSignUpSecondViewControllerFirstNameKey, nil);
+    NSString *NCSignUpSecondViewControllerLastName = NSLocalizedString(NCSignUpSecondViewControllerLastNameKey, nil);
+    NSString *NCSignUpSecondViewControllerPhoneNumber = NSLocalizedString(NCSignUpSecondViewControllerPhoneNumberKey, nil);
 
-    [self.txtFirstName setPlaceholder:NSLocalizedString(@"NCSignUpSecondViewController_PlaceholderFirstName", nil)];
-    [self.txtLastName     setPlaceholder:NSLocalizedString(@"NCSignUpSecondViewController_PlaceholderLastName", nil)];
-    [self.txtPhoneNumber     setPlaceholder:NSLocalizedString(@"NCSignUpSecondViewController_PlaceholderPhoneNumber", nil)];
+    [[self navigationItem] setTitle:NCSignUpSecondViewControllerTitle];
+    [self.textFirstName setPlaceholder:NCSignUpSecondViewControllerFirstName];
+    [self.textLastName setPlaceholder:NCSignUpSecondViewControllerLastName];
+    [self.textPhoneNumber setPlaceholder:NCSignUpSecondViewControllerPhoneNumber];
 
     //BarButtons Setup
-    UIBarButtonItem *barBtnItemDone = [[UIBarButtonItem alloc]
+    UIBarButtonItem *barButtonItemDone = [[UIBarButtonItem alloc]
                                        initWithBarButtonSystemItem:UIBarButtonSystemItemDone
                                        target:self
-                                       action:@selector(barBtnItemDonePressed:)];
+                                       action:@selector(barButttonItemDonePressed:)];
     //    [barBtnItemNext setTintColor:[UIColor whiteColor]];
-    [[self navigationItem] setRightBarButtonItem:barBtnItemDone];
+    [[self navigationItem] setRightBarButtonItem:barButtonItemDone];
 }
 
 
