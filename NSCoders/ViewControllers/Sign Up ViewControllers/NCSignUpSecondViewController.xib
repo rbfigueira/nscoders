@@ -6,9 +6,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NCSignUpSecondViewController">
             <connections>
-                <outlet property="txtFirstName" destination="1M5-jT-O1w" id="wnU-Yg-AUs"/>
-                <outlet property="txtLastName" destination="EGc-1y-8lS" id="aQ2-SC-8yH"/>
-                <outlet property="txtPhoneNumber" destination="WsB-8j-f23" id="Hgm-fm-6Gl"/>
+                <outlet property="imageViewPhoto" destination="qAi-ZZ-bDr" id="JE7-f7-5LV"/>
+                <outlet property="textFirstName" destination="1M5-jT-O1w" id="oc4-Og-3Rs"/>
+                <outlet property="textLastName" destination="EGc-1y-8lS" id="9eC-7j-lGW"/>
+                <outlet property="textPhoneNumber" destination="WsB-8j-f23" id="Rq9-WV-Avm"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>

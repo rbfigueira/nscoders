@@ -32,10 +32,9 @@
 {
     NCSignUpFirstViewController *signUpFirstViewController = [[NCSignUpFirstViewController alloc] initWithNibName:nil bundle:nil];
 
-    UINavigationController *modalNavController = [[UINavigationController alloc] initWithRootViewController:signUpFirstViewController];
-    [modalNavController setModalPresentationStyle:UIModalPresentationFullScreen];
-    [self presentViewController:modalNavController animated:YES completion:nil];
-//    [self presentViewController:signUpFirstViewController animated:YES completion:nil];
+    UINavigationController *signUpFirstNavigationController = [[UINavigationController alloc] initWithRootViewController:signUpFirstViewController];
+    [signUpFirstNavigationController setModalPresentationStyle:UIModalPresentationFullScreen];
+    [self presentViewController:signUpFirstNavigationController animated:YES completion:nil];
 }
 
 @end

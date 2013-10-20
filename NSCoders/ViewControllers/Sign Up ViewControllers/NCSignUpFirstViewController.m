@@ -21,7 +21,7 @@
 
 #pragma mark - Actions
 
-- (IBAction)barBtnItemNextPressed:(id)sender {
+- (IBAction)barButtonItemNextPressed:(id)sender {
     NCSignUpSecondViewController *signUpSecondViewController = [[NCSignUpSecondViewController alloc]
                                                                 initWithNibName:nil
                                                                 bundle:nil];
