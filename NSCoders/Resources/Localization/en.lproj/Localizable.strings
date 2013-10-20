@@ -2,7 +2,7 @@
   Localizable.strings
   NSCoders
 
-  Created by Rui Peres on 10/10/2013.
+  Created by Rui Peres on 10/10/13.
   Copyright (c) 2013 NSCoders. All rights reserved.
 */
 
@@ -18,3 +18,6 @@
 "NCSignUpSecondViewController_PlaceholderFirstName"         = "First Name";
 "NCSignUpSecondViewController_PlaceholderLastName"          = "Last Name";
 "NCSignUpSecondViewController_PlaceholderPhoneNumber"       = "Phone Number";
+
+"Follow" = "Follow"
+"Nearby" = "Nearby"

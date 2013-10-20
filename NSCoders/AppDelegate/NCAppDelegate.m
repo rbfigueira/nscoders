@@ -8,6 +8,7 @@
 
 #import "NCAppDelegate.h"
 #import "NCStartingViewController.h"
+#import "NCMapViewController.h"
 #import "NCAppDelegate+Appearance.h"
 
 @implementation NCAppDelegate
@@ -18,14 +19,19 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-
-    NCStartingViewController *startingViewController = [[NCStartingViewController alloc] initWithNibName:nil bundle:nil];
-    UINavigationController *startingNavigationController = [[UINavigationController alloc] initWithRootViewController:startingViewController];
     
-    [[self window] setRootViewController:startingNavigationController];
-
+    
+//    NCStartingViewController *startingViewController = [[NCStartingViewController alloc] initWithNibName:nil bundle:nil];
+//    UINavigationController *startingNavigationController = [[UINavigationController alloc] initWithRootViewController:startingViewController];
+//    
+//    [[self window] setRootViewController:startingNavigationController];
+    
+    NCMapViewController *mapViewController = [[NCMapViewController alloc] initWithNibName:nil bundle:nil];
+    UINavigationController *mapNavigationController = [[UINavigationController alloc] initWithRootViewController:mapViewController];
+    
+    [[self window] setRootViewController:mapNavigationController];
+    
     [self setupAppearance];
-    
     return YES;
 }
 
