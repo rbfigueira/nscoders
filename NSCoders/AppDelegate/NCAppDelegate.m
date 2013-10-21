@@ -9,6 +9,7 @@
 #import "NCAppDelegate.h"
 #import "NCStartingViewController.h"
 #import "NCMapViewController.h"
+#import "NCAppDelegate+Appearance.h"
 
 @implementation NCAppDelegate
 
@@ -19,17 +20,12 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
+    [self setupAppearance];
     
-//    NCStartingViewController *startingViewController = [[NCStartingViewController alloc] initWithNibName:nil bundle:nil];
-//    UINavigationController *startingNavigationController = [[UINavigationController alloc] initWithRootViewController:startingViewController];
-//    
-//    [[self window] setRootViewController:startingNavigationController];
-    
-    NCMapViewController *mapViewController = [[NCMapViewController alloc] initWithNibName:nil bundle:nil];
-    UINavigationController *mapNavigationController = [[UINavigationController alloc] initWithRootViewController:mapViewController];
-    
-    [[self window] setRootViewController:mapNavigationController];
-    
+    NCStartingViewController *startingViewController = [[NCStartingViewController alloc] initWithNibName:nil bundle:nil];
+    UINavigationController *startingNavigationController = [[UINavigationController alloc] initWithRootViewController:startingViewController];
+    [[self window] setRootViewController:startingNavigationController];
+        
     return YES;
 }
 

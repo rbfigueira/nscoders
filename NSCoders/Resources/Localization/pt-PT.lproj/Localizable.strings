@@ -5,5 +5,17 @@
   Created by Pedro Remedios on 17/10/13.
   Copyright (c) 2013 NSCoders. All rights reserved.
 */
-"Follow" = "Seguindo"
-"Nearby" = "Perto de Mim"
+
+"SIGN_UP_TITLE"                     = "Aderir";
+
+"EMAIL"                             = "Email";
+"PASSWORD"                          = "Palavra-passe";
+"CONFIRM_PASSWORD"                  = "Confirmar palavra-passe";
+"NEXT"                              = "Próximo";
+
+"FIRST_NAME"                        = "Primeiro Nome";
+"LAST_NAME"                         = "Último Nome";
+"PHONE_NUMBER"                      = "Nº Telemóvel";
+
+"FOLLOW"                            = "Seguindo";
+"NEARBY"                            = "Perto de Mim";

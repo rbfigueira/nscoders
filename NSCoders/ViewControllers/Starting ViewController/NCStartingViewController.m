@@ -8,6 +8,7 @@
 
 #import "NCStartingViewController.h"
 #import "NCStartingViewController+UI.h"
+#import "NCSignUpFirstViewController.h"
 
 @interface NCStartingViewController ()
 
@@ -27,9 +28,13 @@
 
 #pragma mark - IBAction methods
 
-- (void)classicRegistrationAction:(id)sender
+- (IBAction)classicRegistrationAction:(id)sender
 {
-    //TODO: To be defined
+    NCSignUpFirstViewController *signUpFirstViewController = [[NCSignUpFirstViewController alloc] initWithNibName:nil bundle:nil];
+
+    UINavigationController *signUpFirstNavigationController = [[UINavigationController alloc] initWithRootViewController:signUpFirstViewController];
+    [signUpFirstNavigationController setModalPresentationStyle:UIModalPresentationFullScreen];
+    [self presentViewController:signUpFirstNavigationController animated:YES completion:nil];
 }
 
 @end
