@@ -8,8 +8,11 @@
 
 #import "NCAppDelegate.h"
 #import "NCStartingViewController.h"
-#import "NCMapViewController.h"
+<<<<<<< HEAD
 #import "NCAppDelegate+Appearance.h"
+=======
+#import "NCMapViewController.h"
+>>>>>>> 1f9fbc2f089c6d3259539fb3a8a90cacf7d5724a
 
 @implementation NCAppDelegate
 
@@ -19,13 +22,28 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    
-    [self setupAppearance];
-    
+<<<<<<< HEAD
+
     NCStartingViewController *startingViewController = [[NCStartingViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController *startingNavigationController = [[UINavigationController alloc] initWithRootViewController:startingViewController];
+    
     [[self window] setRootViewController:startingNavigationController];
-        
+
+    [self setupAppearance];
+=======
+    
+    
+//    NCStartingViewController *startingViewController = [[NCStartingViewController alloc] initWithNibName:nil bundle:nil];
+//    UINavigationController *startingNavigationController = [[UINavigationController alloc] initWithRootViewController:startingViewController];
+//    
+//    [[self window] setRootViewController:startingNavigationController];
+    
+    NCMapViewController *mapViewController = [[NCMapViewController alloc] initWithNibName:nil bundle:nil];
+    UINavigationController *mapNavigationController = [[UINavigationController alloc] initWithRootViewController:mapViewController];
+    
+    [[self window] setRootViewController:mapNavigationController];
+>>>>>>> 1f9fbc2f089c6d3259539fb3a8a90cacf7d5724a
+    
     return YES;
 }
 

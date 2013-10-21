@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface NCSignUpSecondViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UITextField *textFirstName;
 @property (weak, nonatomic) IBOutlet UITextField *textLastName;
 @property (weak, nonatomic) IBOutlet UITextField *textPhoneNumber;
