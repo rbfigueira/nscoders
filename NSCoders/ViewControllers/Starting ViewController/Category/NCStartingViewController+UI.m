@@ -14,6 +14,7 @@
 {
     [[self navigationController] setNavigationBarHidden:YES];
     //TODO: To be defined
+
 }
 
 @end
