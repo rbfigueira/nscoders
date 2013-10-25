@@ -23,7 +23,19 @@ Objective-C Style Guide
 
 [The New York times's objective-c](https://github.com/NYTimes/objective-c-style-guide) coding standards will be served as the guide for this application.
 
-=== v 1.0 Roadmap === 
+
+Continuous Integration
+========
+
+We use [Travis CI](https://travis-ci.org/) to build the project. You can see the status here: [https://travis-ci.org/rbfigueira/nscoders](https://travis-ci.org/rbfigueira/nscoders)
+
+[Travis CI](https://travis-ci.org/) is a hosted continuous integration service for the open source community. Travis CI will listen to push and pull request events to trigger new builds, member and public events to keep track of repository visibility and issue comment events.
+
+
+Roadmap
+========
+ 
+=== v 1.0 === 
 
 3 Features: 
 
