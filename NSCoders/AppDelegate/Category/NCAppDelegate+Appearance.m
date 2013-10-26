@@ -13,7 +13,8 @@
 -(void)setupAppearance {
 
     // Navigation bar appearance
-    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+
     //TODO: Ensure iOS 6 compatibility
     [UINavigationBar appearance].barTintColor = [UIColor blackColor];
     [UINavigationBar appearance].titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil];

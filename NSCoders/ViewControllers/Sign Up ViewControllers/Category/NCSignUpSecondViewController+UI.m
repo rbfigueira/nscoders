@@ -31,7 +31,7 @@ static NSString *const NCSignUpSecondViewControllerPhoneNumberKey = @"PHONE_NUMB
     UIBarButtonItem *barButtonItemDone = [[UIBarButtonItem alloc]
                                        initWithBarButtonSystemItem:UIBarButtonSystemItemDone
                                        target:self
-                                       action:@selector(barButttonItemDonePressed:)];
+                                       action:@selector(barButtonItemDonePressed:)];
     //    [barBtnItemNext setTintColor:[UIColor whiteColor]];
     [[self navigationItem] setRightBarButtonItem:barButtonItemDone];
 }
